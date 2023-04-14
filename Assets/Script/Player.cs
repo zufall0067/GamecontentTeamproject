@@ -6,7 +6,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private WaitForEndOfFrame waitForEndOfFrame;
-    public Vector2 size;
     public LayerMask whatIsLayer;
 
     private float speed;
@@ -17,7 +16,9 @@ public class Player : MonoBehaviour
     private Vector3 velocity;
 
     private new Rigidbody2D rigidbody;
+    private Collider2D hit;
 
+    private bool isAroundCha;
     private bool isTalking;
 
     private void Awake()
@@ -31,6 +32,16 @@ public class Player : MonoBehaviour
         speed = 10f;
         isTalking= false;
         rigidbody = GetComponent<Rigidbody2D>();
+
+        StartCoroutine(CharacterCheck());
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && isAroundCha)
+        {
+            Debug.Log(hit.gameObject.name);
+        }
     }
 
     private void FixedUpdate()
@@ -51,19 +62,26 @@ public class Player : MonoBehaviour
 
     private IEnumerator CharacterCheck()
     {
-        Collider2D hit = Physics2D.OverlapBox(transform.position, size, 0, whatIsLayer);
-
-        if(hit != null) 
+        while(true)
         {
+            hit = Physics2D.OverlapCircle(transform.position, 0.8f, whatIsLayer);
 
+            if (hit != null)
+            {
+                isAroundCha = true;
+            }
+            else
+            {
+                isAroundCha = false;
+            }
+
+            yield return waitForEndOfFrame;
         }
-
-        yield return waitForEndOfFrame;
     }
 
     void OnDrawGizmos()
     {
         Gizmos.color = UnityEngine.Color.red;
-        Gizmos.DrawWireCube(transform.position, size);
+        Gizmos.DrawSphere(transform.position, 0.8f);
     }
 }
