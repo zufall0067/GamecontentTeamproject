@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     [SerializeField]
-    private CharacterSO characterSO;
+    public CharacterSO characterSO;
     [SerializeField]
     private GameObject characterImage;
     [SerializeField]
@@ -18,22 +18,12 @@ public class Character : MonoBehaviour
 
     void Start()
     {
-         
+         likePoint = 0;
     }
 
     void Update()
     {
         
-    }
-
-    private void ShowDialogue(int count)
-    {
-
-    }
-
-    private void HideDialogue()
-    {
-
     }
 
     public void trueAnswerInput()

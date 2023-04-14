@@ -13,11 +13,19 @@ public class TextManager : MonoBehaviour
     [SerializeField]
     private GameObject threeButton;
 
+    public GameObject TextPanle;
+    public Text name;
+    public Text textDial;
+
+    public CharacterSO characterSO;
+    public TextSO textSO;
     public SelectTextSO selectTextSO;
 
     private Text firstText;
     private Text secondText;
     private Text threeText;
+
+    private int index;
 
     private void Awake()
     {
@@ -28,13 +36,19 @@ public class TextManager : MonoBehaviour
 
     void Start()
     {
-        buttonInputText();
         HideSelectPanel();
+        HideTextPanel();
     }
 
-    public void ChangeSO(SelectTextSO SO)
+    public void ChangeSO(CharacterSO SO)
     {
-        selectTextSO = SO;
+        characterSO = SO;
+    }
+
+    public void ChangeTextSO(int index)
+    {
+        textSO = characterSO.arrayTextSO[index];
+        selectTextSO = characterSO.arraySelectTextSO[index];
     }
 
     public void buttonInputText()
@@ -102,6 +116,35 @@ public class TextManager : MonoBehaviour
         {
             threeButton.SetActive(false);
         }
+    }
+
+    public void ShowTextPanel(TextSO SO)
+    {
+        if(TextPanle.activeSelf == false)
+        { TextPanle.SetActive(true); }
+
+        name.text = SO.name;
+        textDial.text = SO.text[0];
+        index = 0;
+    }
+
+    public void NextTextPanel(TextSO SO)
+    {
+        index += 1;
+
+        if (string.IsNullOrEmpty(SO.text[index]))
+        {
+            HideTextPanel();
+            ShowSelectPanel();
+        }
+
+        textDial.text = SO.text[index];
+    }
+
+    public void HideTextPanel()
+    {
+        if (TextPanle.activeSelf == true)
+        { TextPanle.SetActive(false); }
     }
 
     public void trueAnser()

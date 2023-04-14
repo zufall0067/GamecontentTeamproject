@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     private new Rigidbody2D rigidbody;
     private Collider2D hit;
+    private Character character;
+    private TextManager textManager;
 
     private bool isAroundCha;
     private bool isTalking;
@@ -32,15 +34,26 @@ public class Player : MonoBehaviour
         speed = 10f;
         isTalking= false;
         rigidbody = GetComponent<Rigidbody2D>();
-
+        textManager = FindObjectOfType<TextManager>();
         StartCoroutine(CharacterCheck());
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isAroundCha)
+        if(Input.GetKeyDown(KeyCode.Space) && isAroundCha && !isTalking)
         {
-            Debug.Log(hit.gameObject.name);
+            textManager.ChangeSO(character.characterSO);
+            textManager.ChangeTextSO(character.likePoint);
+            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+            isTalking= true;
+        }
+        else if(isTalking)
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+                Debug.Log("어어어어");
+            }
         }
     }
 
@@ -68,10 +81,12 @@ public class Player : MonoBehaviour
 
             if (hit != null)
             {
+                character = hit.gameObject.GetComponent<Character>();
                 isAroundCha = true;
             }
             else
             {
+                character = null;
                 isAroundCha = false;
             }
 
