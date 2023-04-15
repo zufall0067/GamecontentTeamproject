@@ -40,20 +40,19 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isAroundCha && !isTalking)
+        if (isTalking)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && isAroundCha && !isTalking)
         {
             textManager.ChangeSO(character.characterSO);
             textManager.ChangeTextSO(character.likePoint);
-            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint), character.characterName, character.characterImage);
             isTalking= true;
-        }
-        else if(isTalking)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
-                Debug.Log("어어어어");
-            }
         }
     }
 

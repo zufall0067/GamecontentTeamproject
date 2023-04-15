@@ -7,9 +7,9 @@ public class Character : MonoBehaviour
     [SerializeField]
     public CharacterSO characterSO;
     [SerializeField]
-    private GameObject characterImage;
+    public GameObject characterImage;
     [SerializeField]
-    private string characterName;
+    public string characterName;
 
     [SerializeField]
     private GameObject dialogue;

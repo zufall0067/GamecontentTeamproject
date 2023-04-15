@@ -156,7 +156,7 @@ MonoBehaviour:
   secondButton: {fileID: 286381128}
   threeButton: {fileID: 992468685}
   TextPanle: {fileID: 2113611226}
-  name: {fileID: 1870213992}
+  characterName: {fileID: 1870213992}
   textDial: {fileID: 414390480}
   characterSO: {fileID: 0}
   textSO: {fileID: 0}
@@ -608,8 +608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSO: {fileID: 11400000, guid: 3643a7df54fb2b3418ad945346b04524, type: 2}
-  characterImage: {fileID: 0}
-  characterName: 
+  characterImage: {fileID: 4924516239773933009, guid: e7345d7f20511844587c0afdff40a81c, type: 3}
+  characterName: "\uAFC8\uD234\uC7742"
   dialogue: {fileID: 0}
   likePoint: 0
 --- !u!212 &840873167
@@ -871,8 +871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSO: {fileID: 11400000, guid: 3643a7df54fb2b3418ad945346b04524, type: 2}
-  characterImage: {fileID: 0}
-  characterName: 
+  characterImage: {fileID: 4924516239773933009, guid: e7345d7f20511844587c0afdff40a81c, type: 3}
+  characterName: "\uAFC8\uD234\uC774"
   dialogue: {fileID: 0}
   likePoint: 0
 --- !u!212 &1203287421

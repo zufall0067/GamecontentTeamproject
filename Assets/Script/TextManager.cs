@@ -14,7 +14,7 @@ public class TextManager : MonoBehaviour
     private GameObject threeButton;
 
     public GameObject TextPanle;
-    public Text name;
+    public Text characterName;
     public Text textDial;
 
     public CharacterSO characterSO;
@@ -24,6 +24,8 @@ public class TextManager : MonoBehaviour
     private Text firstText;
     private Text secondText;
     private Text threeText;
+
+    private GameObject characterImagePrefab;
 
     private int index;
 
@@ -118,12 +120,13 @@ public class TextManager : MonoBehaviour
         }
     }
 
-    public void ShowTextPanel(TextSO SO)
+    public void ShowTextPanel(TextSO SO, string name, GameObject characterImage)
     {
         if(TextPanle.activeSelf == false)
         { TextPanle.SetActive(true); }
 
-        name.text = SO.name;
+        characterImagePrefab = Instantiate(characterImage);
+        characterName.text = name;
         textDial.text = SO.text[0];
         index = 0;
     }
@@ -131,6 +134,8 @@ public class TextManager : MonoBehaviour
     public void NextTextPanel(TextSO SO)
     {
         index += 1;
+
+        
 
         if (string.IsNullOrEmpty(SO.text[index]))
         {
@@ -145,6 +150,10 @@ public class TextManager : MonoBehaviour
     {
         if (TextPanle.activeSelf == true)
         { TextPanle.SetActive(false); }
+
+        if(characterImagePrefab != null) 
+        { Destroy(characterImagePrefab.gameObject); }
+        
     }
 
     public void trueAnser()
