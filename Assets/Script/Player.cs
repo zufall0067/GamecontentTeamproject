@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         {
             textManager.ChangeSO(character.characterSO);
             textManager.ChangeTextSO(character.likePoint);
-            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint), character.characterName, character.characterImage);
+            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint), character.gameObject);
             isTalking= true;
         }
     }

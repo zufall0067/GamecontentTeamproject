@@ -29,6 +29,10 @@ public class TextManager : MonoBehaviour
 
     private int index;
 
+    private string insCharacterName;
+    private GameObject insCharacterImage;
+    private Character insCharacter;
+
     private void Awake()
     {
         firstText = firstButton.transform.Find("Text").gameObject.GetComponent<Text>();
@@ -40,6 +44,13 @@ public class TextManager : MonoBehaviour
     {
         HideSelectPanel();
         HideTextPanel();
+    }
+
+    public void InstantiateCharacter(GameObject characterObject)
+    {
+        insCharacter = characterObject.GetComponent<Character>();
+        insCharacterImage = insCharacter.characterImage;
+        insCharacterName = insCharacter.characterName;
     }
 
     public void ChangeSO(CharacterSO SO)
@@ -120,13 +131,14 @@ public class TextManager : MonoBehaviour
         }
     }
 
-    public void ShowTextPanel(TextSO SO, string name, GameObject characterImage)
+    public void ShowTextPanel(TextSO SO, GameObject characterObject)
     {
         if(TextPanle.activeSelf == false)
         { TextPanle.SetActive(true); }
+        InstantiateCharacter(characterObject);
 
-        characterImagePrefab = Instantiate(characterImage);
-        characterName.text = name;
+        characterImagePrefab = Instantiate(insCharacterImage);
+        characterName.text = insCharacterName;
         textDial.text = SO.text[0];
         index = 0;
     }
@@ -134,8 +146,6 @@ public class TextManager : MonoBehaviour
     public void NextTextPanel(TextSO SO)
     {
         index += 1;
-
-        
 
         if (string.IsNullOrEmpty(SO.text[index]))
         {
@@ -158,11 +168,13 @@ public class TextManager : MonoBehaviour
 
     public void trueAnser()
     {
+        HideSelectPanel();
         Debug.Log("Æ®·ç");
     }
 
     public void falseAnser()
     {
+        HideSelectPanel();
         Debug.Log("»¹½º");
     }
 }
