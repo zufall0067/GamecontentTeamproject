@@ -66,9 +66,15 @@ public class TextManager : MonoBehaviour
 
     public void buttonInputText()
     {
+        firstButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        secondButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        threeButton.GetComponent<Button>().onClick.RemoveAllListeners();
+
         firstText.text = selectTextSO.firstText;
         secondText.text = selectTextSO.secondText;
         threeText.text = selectTextSO.threeText;
+
+        
 
         if (selectTextSO.firstTrue == true)
         {
@@ -147,6 +153,12 @@ public class TextManager : MonoBehaviour
     {
         index += 1;
 
+        if (SO.text[index] == "end")
+        {
+            index -= 1;
+            return;
+        }
+
         if (string.IsNullOrEmpty(SO.text[index]))
         {
             HideTextPanel();
@@ -169,12 +181,16 @@ public class TextManager : MonoBehaviour
     public void trueAnser()
     {
         HideSelectPanel();
+        Player.isTalking = false;
+        insCharacter.GetComponent<Character>().trueAnswerInput();
         Debug.Log("Æ®·ç");
     }
 
     public void falseAnser()
     {
         HideSelectPanel();
+        Player.isTalking = false;
+        
         Debug.Log("»¹½º");
     }
 }

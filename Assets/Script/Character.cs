@@ -21,14 +21,13 @@ public class Character : MonoBehaviour
          likePoint = 0;
     }
 
-    void Update()
-    {
-        
-    }
-
     public void trueAnswerInput()
     {
         likePoint++;
 
+        if(likePoint >= 5)
+        {
+            Debug.Log("≤Ù¿ø");
+        }
     }
 }

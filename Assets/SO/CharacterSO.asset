@@ -15,12 +15,12 @@ MonoBehaviour:
   arraySelectTextSO:
   - {fileID: 11400000, guid: 76e56e018f8aa11428c14037914f12f0, type: 2}
   - {fileID: 11400000, guid: 76e56e018f8aa11428c14037914f12f0, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 76e56e018f8aa11428c14037914f12f0, type: 2}
+  - {fileID: 11400000, guid: 76e56e018f8aa11428c14037914f12f0, type: 2}
+  - {fileID: 11400000, guid: 76e56e018f8aa11428c14037914f12f0, type: 2}
   arrayTextSO:
   - {fileID: 11400000, guid: 4df5ac451449e224abb2335ead243310, type: 2}
   - {fileID: 11400000, guid: 26c5be84b2e1e4543b6ce05ee13ea546, type: 2}
+  - {fileID: 11400000, guid: 26c5be84b2e1e4543b6ce05ee13ea546, type: 2}
   - {fileID: 11400000, guid: c93d0c6e431386f469f6245c51741002, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: c93d0c6e431386f469f6245c51741002, type: 2}

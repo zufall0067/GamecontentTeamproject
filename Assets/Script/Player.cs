@@ -21,12 +21,7 @@ public class Player : MonoBehaviour
     private TextManager textManager;
 
     private bool isAroundCha;
-    private bool isTalking;
-
-    private void Awake()
-    {
-
-    }
+    public static bool isTalking;
 
     private void Start()
     {
@@ -42,7 +37,7 @@ public class Player : MonoBehaviour
     {
         if (isTalking)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && character.likePoint < 5)
             {
                 textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
             }
