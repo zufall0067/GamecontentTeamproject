@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: TextSo 1
   m_EditorClassIdentifier: 
   text:
-  - 1
-  - 2
-  - 3
-  - 4
+  - "11\t"
+  - 22
+  - 33
+  - 44
+  - 
+  - end

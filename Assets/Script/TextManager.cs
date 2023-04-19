@@ -14,7 +14,7 @@ public class TextManager : MonoBehaviour
     private GameObject threeButton;
 
     public GameObject TextPanle;
-    public Text name;
+    public Text characterName;
     public Text textDial;
 
     public CharacterSO characterSO;
@@ -25,7 +25,13 @@ public class TextManager : MonoBehaviour
     private Text secondText;
     private Text threeText;
 
+    private GameObject characterImagePrefab;
+
     private int index;
+
+    private string insCharacterName;
+    private GameObject insCharacterImage;
+    private Character insCharacter;
 
     private void Awake()
     {
@@ -38,6 +44,13 @@ public class TextManager : MonoBehaviour
     {
         HideSelectPanel();
         HideTextPanel();
+    }
+
+    public void InstantiateCharacter(GameObject characterObject)
+    {
+        insCharacter = characterObject.GetComponent<Character>();
+        insCharacterImage = insCharacter.characterImage;
+        insCharacterName = insCharacter.characterName;
     }
 
     public void ChangeSO(CharacterSO SO)
@@ -53,9 +66,15 @@ public class TextManager : MonoBehaviour
 
     public void buttonInputText()
     {
+        firstButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        secondButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        threeButton.GetComponent<Button>().onClick.RemoveAllListeners();
+
         firstText.text = selectTextSO.firstText;
         secondText.text = selectTextSO.secondText;
         threeText.text = selectTextSO.threeText;
+
+        
 
         if (selectTextSO.firstTrue == true)
         {
@@ -118,12 +137,15 @@ public class TextManager : MonoBehaviour
         }
     }
 
-    public void ShowTextPanel(TextSO SO)
+    public void ShowTextPanel(TextSO SO, GameObject characterObject)
     {
         if(TextPanle.activeSelf == false)
         { TextPanle.SetActive(true); }
+        InstantiateCharacter(characterObject);
 
-        name.text = SO.name;
+        characterImagePrefab = Instantiate(insCharacterImage);
+        characterImagePrefab.transform.position += new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y);
+        characterName.text = insCharacterName;
         textDial.text = SO.text[0];
         index = 0;
     }
@@ -131,6 +153,12 @@ public class TextManager : MonoBehaviour
     public void NextTextPanel(TextSO SO)
     {
         index += 1;
+
+        if (SO.text[index] == "end")
+        {
+            index -= 1;
+            return;
+        }
 
         if (string.IsNullOrEmpty(SO.text[index]))
         {
@@ -145,15 +173,25 @@ public class TextManager : MonoBehaviour
     {
         if (TextPanle.activeSelf == true)
         { TextPanle.SetActive(false); }
+
+        if(characterImagePrefab != null) 
+        { Destroy(characterImagePrefab.gameObject); }
+        
     }
 
     public void trueAnser()
     {
+        HideSelectPanel();
+        Player.isTalking = false;
+        insCharacter.GetComponent<Character>().trueAnswerInput();
         Debug.Log("Æ®·ç");
     }
 
     public void falseAnser()
     {
+        HideSelectPanel();
+        Player.isTalking = false;
+        
         Debug.Log("»¹½º");
     }
 }

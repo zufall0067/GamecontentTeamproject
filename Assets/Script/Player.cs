@@ -21,17 +21,15 @@ public class Player : MonoBehaviour
     private TextManager textManager;
 
     private bool isAroundCha;
-    private bool isTalking;
+    public static bool isTalking;
 
-    private void Awake()
-    {
-
-    }
+    public int followPet;
 
     private void Start()
     {
         whatIsLayer = LayerMask.GetMask("Character");
         speed = 10f;
+        followPet = 0;
         isTalking= false;
         rigidbody = GetComponent<Rigidbody2D>();
         textManager = FindObjectOfType<TextManager>();
@@ -40,20 +38,19 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isAroundCha && !isTalking)
+        if (isTalking)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) && character.likePoint < 5)
+            {
+                textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && isAroundCha && !isTalking)
         {
             textManager.ChangeSO(character.characterSO);
             textManager.ChangeTextSO(character.likePoint);
-            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
+            textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint), character.gameObject);
             isTalking= true;
-        }
-        else if(isTalking)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                textManager.NextTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint));
-                Debug.Log("어어어어");
-            }
         }
     }
 
