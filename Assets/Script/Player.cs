@@ -23,10 +23,13 @@ public class Player : MonoBehaviour
     private bool isAroundCha;
     public static bool isTalking;
 
+    public int followPet;
+
     private void Start()
     {
         whatIsLayer = LayerMask.GetMask("Character");
         speed = 10f;
+        followPet = 0;
         isTalking= false;
         rigidbody = GetComponent<Rigidbody2D>();
         textManager = FindObjectOfType<TextManager>();
