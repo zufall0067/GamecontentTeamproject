@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
@@ -30,7 +31,7 @@ public class TextManager : MonoBehaviour
     private int index;
 
     private string insCharacterName;
-    private GameObject insCharacterImage;
+    private GameObject[] insCharacterImage;
     private Character insCharacter;
 
     private void Awake()
@@ -143,7 +144,7 @@ public class TextManager : MonoBehaviour
         { TextPanle.SetActive(true); }
         InstantiateCharacter(characterObject);
 
-        characterImagePrefab = Instantiate(insCharacterImage);
+        characterImagePrefab = Instantiate(insCharacterImage[0]);
         characterImagePrefab.transform.position += new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 10);
         characterName.text = insCharacterName;
         textDial.text = SO.text[0];
@@ -154,9 +155,15 @@ public class TextManager : MonoBehaviour
     {
         index += 1;
 
-        if (SO.text[index] == "cutScene" || SO.text[index] == "CutScene" || SO.text[index] == "CUTSCENE")
+        if (SO.text[index].Contains("ChangeImage"))
         {
+            string number = SO.text[index].Substring(SO.text[index].IndexOf('[') + 1, 1);
+            int numberIndex = int.Parse(number);
+
             Destroy(characterImagePrefab);
+            characterImagePrefab = Instantiate(insCharacterImage[numberIndex]);
+            characterImagePrefab.transform.position += new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 10);
+            index += 1;
         }
 
         if (SO.text[index] == "end" || SO.text[index] == "End" || SO.text[index] == "END")
@@ -170,6 +177,7 @@ public class TextManager : MonoBehaviour
             HideTextPanel();
             ShowSelectPanel();
         }
+
 
         textDial.text = SO.text[index];
     }

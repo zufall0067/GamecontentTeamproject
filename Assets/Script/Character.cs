@@ -7,7 +7,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     public CharacterSO characterSO;
     [SerializeField]
-    public GameObject characterImage;
+    public GameObject[] characterImage;
     [SerializeField]
     public GameObject characterCutScene;
     [SerializeField]
