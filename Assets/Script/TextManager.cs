@@ -154,7 +154,7 @@ public class TextManager : MonoBehaviour
     {
         index += 1;
 
-        if (SO.text[index] == "end")
+        if (SO.text[index] == "end" || SO.text[index] == "End" || SO.text[index] == "END")
         {
             index -= 1;
             return;
