@@ -58,11 +58,12 @@ public class Player : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.Space))
         {
             doorHit = Physics2D.OverlapCircle(transform.position, 0.8f, doorLayer);
-            Debug.Log(doorHit.name);
-            doorHit.GetComponent<Door>().Move(this.transform);
+
+            if(doorHit != null) { Debug.Log(doorHit.name); doorHit.GetComponent<Door>().Move(this.transform); }
+            
         }
     }
-
+    
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.LeftShift))
