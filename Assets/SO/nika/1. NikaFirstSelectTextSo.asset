@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
+  m_Name: 1. NikaFirstSelectTextSo
+  m_EditorClassIdentifier: 
+  firstText: "\uB9C8\uCE68 \uCD9C\uCD9C\uD558\uB358 \uCC38\uC774\uC600\uC5B4\uC694!
+    \u314E\u314E"
+  firstTrue: 1
+  secondText: "\uB5A1\uBCF6\uC774\uAC00 \uBA39\uACE0\uC2F6\uAE34 \uD558\uB098, \uD5C8\uB098
+    \uAC70\uC808\uD55C\uB2E4."
+  secondTrue: 1
+  threeText: "\uBB50\uC57C \uC774\uB144\uC740 \uAEBC\uC838!"
+  threeTrue: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
+  m_Name: 5. NikaFitthSelectTextSo
+  m_EditorClassIdentifier: 
+  firstText: "\uC0AC\uC2E4 \uC800\uB3C4 \uC624\uB798\uC804\uBD80\uD130 \uC88B\uC544\uD588\uC5B4\uC694
+    \uC13C\uBE60\uC774"
+  firstTrue: 1
+  secondText: "\uC0AC\uC2E4 \uC624\uB798\uC804\uBD80\uD130 \uB2F9\uC2E0\uAC19\uC740
+    \uC0AC\uB78C\uC744 \uAE30\uB2E4\uB824\uC654\uB2E4\uC6B0"
+  secondTrue: 1
+  threeText: "\uB09C \uC5B4\uCC0C\uB3FC\uB3C4 \uBAA8\uB978\uB2E4!!"
+  threeTrue: 1

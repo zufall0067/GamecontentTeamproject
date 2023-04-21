@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48d9a04b001c16443b28ed5c1fe1d93f, type: 3}
-  m_Name: TextSo
+  m_Name: 3. NikaThirdTextSo
   m_EditorClassIdentifier: 
   text:
-  - "\u3141\u3134\u3147\u3139"
-  - "\u3141\u3134\u3147\u3139"
-  - 
+  - "\uC5B4\uBA4B! \uC6B0\uC5F0\uD788 \uB9CC\uB0AC\uB124 \u314E\u314E"
+  - "\uB098 \uC624\uB298 \uC1FC\uD551\uD558\uB7EC \uAC08\uAC74\uB370 "
+  - "\uACE7\uC788\uC73C\uBA74 \uC5EC\uB984\uC774\uC796\uC544"
+  - "\uAC19\uC774 \uC218\uC601\uBCF5 \uACE0\uB974\uB7EC \uAC00\uC9C0 \uC54A\uC744\uB798?"
   - end
