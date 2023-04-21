@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: NikaCharacterSO
   m_EditorClassIdentifier: 
   arraySelectTextSO:
+  - {fileID: 11400000, guid: 82b00cf01a8220f4d80e5b4ac81a8c74, type: 2}
+  - {fileID: 11400000, guid: 45d8e027fc94e2242945f70253ef256c, type: 2}
   - {fileID: 11400000, guid: 3fa515d484a061f4eb1e96d885f21987, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5358d9e997f623c40b3d5d47c29d5973, type: 2}
+  - {fileID: 11400000, guid: 5680cf92d7690344294677bd30399ffe, type: 2}
   arrayTextSO:
   - {fileID: 11400000, guid: 5cbfaab06e221ef42aabb8353c5b024e, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4c438fef41f90744586b5632ce1b0648, type: 2}
+  - {fileID: 11400000, guid: e9791165ba7d1564ab2e22f911cd1a47, type: 2}
+  - {fileID: 11400000, guid: aa6b1040d9f9b784cbd3637598f8de85, type: 2}
+  - {fileID: 11400000, guid: 62bf2790e7541e043b39173e9a59aa23, type: 2}

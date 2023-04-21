@@ -144,7 +144,7 @@ public class TextManager : MonoBehaviour
         InstantiateCharacter(characterObject);
 
         characterImagePrefab = Instantiate(insCharacterImage);
-        characterImagePrefab.transform.position += new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y);
+        characterImagePrefab.transform.position += new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 10);
         characterName.text = insCharacterName;
         textDial.text = SO.text[0];
         index = 0;
