@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     private WaitForEndOfFrame waitForEndOfFrame;
     public LayerMask whatIsLayer;
+    public LayerMask doorLayer;
 
     private float speed;
     private Vector3 moveHorizontal;
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
 
     private new Rigidbody2D rigidbody;
     private Collider2D hit;
+    private Collider2D doorHit;
     private Character character;
     private TextManager textManager;
 
@@ -28,6 +30,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         whatIsLayer = LayerMask.GetMask("Character");
+        doorLayer = LayerMask.GetMask("Door");
         speed = 10f;
         followPet = 0;
         isTalking= false;
@@ -51,6 +54,12 @@ public class Player : MonoBehaviour
             textManager.ChangeTextSO(character.likePoint);
             textManager.ShowTextPanel(character.characterSO.arrayTextSOIndex(character.likePoint), character.gameObject);
             isTalking= true;
+        }
+        else if(Input.GetKeyDown(KeyCode.Space))
+        {
+            doorHit = Physics2D.OverlapCircle(transform.position, 0.8f, doorLayer);
+            Debug.Log(doorHit.name);
+            doorHit.GetComponent<Door>().Move(this.transform);
         }
     }
 

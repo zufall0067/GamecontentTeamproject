@@ -154,6 +154,11 @@ public class TextManager : MonoBehaviour
     {
         index += 1;
 
+        if (SO.text[index] == "cutScene" || SO.text[index] == "CutScene" || SO.text[index] == "CUTSCENE")
+        {
+            Destroy(characterImagePrefab);
+        }
+
         if (SO.text[index] == "end" || SO.text[index] == "End" || SO.text[index] == "END")
         {
             index -= 1;

@@ -9,6 +9,8 @@ public class Character : MonoBehaviour
     [SerializeField]
     public GameObject characterImage;
     [SerializeField]
+    public GameObject characterCutScene;
+    [SerializeField]
     public string characterName;
 
     [SerializeField]
