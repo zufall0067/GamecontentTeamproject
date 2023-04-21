@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: SelectTextSo
   m_EditorClassIdentifier: 
-  firstText: 
+  firstText: E
   firstTrue: 0
-  secondText: 
+  secondText: "\uAFC8\uD234"
   secondTrue: 0
-  threeText: 
+  threeText: "\uC5BC\uD0F1\uC774 \uB9CC\uC9C0\uAE30"
   threeTrue: 0
