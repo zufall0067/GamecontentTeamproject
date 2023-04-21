@@ -56,7 +56,16 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isTalking == false) 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 15f;
+        }
+        else
+        {
+            speed = 8f;
+        }
+
+        if (isTalking == false) 
         {
             moveDirx = Input.GetAxisRaw("Horizontal");
             moveDiry = Input.GetAxisRaw("Vertical");
