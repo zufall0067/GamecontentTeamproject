@@ -9,18 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a39e75352c8c8da48b977dd786d53e53, type: 3}
-  m_Name: CharacterSO
+  m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
+  m_Name: 1. RinFirstSelectTextSo
   m_EditorClassIdentifier: 
-  arraySelectTextSO:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  arrayTextSO:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  firstText: "\uB204\uAD6C\uC138\uC694..?"
+  firstTrue: 0
+  secondText: 
+  secondTrue: 1
+  threeText: "\uBB50\uC57C \uC774\uB144\uC740 \uAEBC\uC838!"
+  threeTrue: 0

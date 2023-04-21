@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d9a04b001c16443b28ed5c1fe1d93f, type: 3}
+  m_Name: 3. RinThirdTextSo
+  m_EditorClassIdentifier: 
+  text:
+  - "\uC5B4\uBA4B! \uC6B0\uC5F0\uD788 \uB9CC\uB0AC\uB124 \u314E\u314E"
+  - "\uB098 \uC624\uB298 \uC1FC\uD551\uD558\uB7EC \uAC08\uAC74\uB370 "
+  - "\uACE7\uC788\uC73C\uBA74 \uC5EC\uB984\uC774\uC796\uC544"
+  - "\uAC19\uC774 \uC218\uC601\uBCF5 \uACE0\uB974\uB7EC \uAC00\uC9C0 \uC54A\uC744\uB798?"
+  - end
