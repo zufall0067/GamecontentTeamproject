@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 2. RinSecondSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "12\uAC1C"
+  firstText: "\uC5B4..? \uB098 \uC624\uB298 \uC804\uC0DD\uC2AC \uC2E0\uC791 \uB098\uC628\uB2E4\uD574\uC11C....\uC11C\uC810\uC5D0
+    \uAC00\uC57C\uD560\uAC70\uAC19\uB2E4...."
   firstTrue: 0
-  secondText: "4\uAC1C"
+  secondText: "\uC5B4? \uADF8\uB798 \uB0B4\uAC00 \uC880 \uB3C4\uC640\uC904\uAC8C!!"
   secondTrue: 1
-  threeText: "\uB108\uB294 \uC774\uC81C\uAE4C\uC9C0 \uBA39\uC740 \uBE75\uC758 \uAC1C\uC218\uB97C
-    \uC77C\uC77C\uC774 \uAE30\uC5B5\uD558\uB098?"
-  threeTrue: 1
+  threeText: "\uB0B4\uAC00 \uC9C4\uC9DC \uB3C4\uC6C0\uC774 \uB420\uAE4C...?"
+  threeTrue: 0
