@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0f8fbb5d8b26dcf448453bb387a648d8, type: 2}
   arrayTextSO:
   - {fileID: 11400000, guid: b1ce600cdf56bc64aa1ef4d376627886, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: ba1ca03ecfd30414686d68e8caacd173, type: 2}
+  - {fileID: 11400000, guid: 5ade343773d2f9c4aa412ac8ee8a9884, type: 2}
+  - {fileID: 11400000, guid: dc863a4dc34da8746b64a7116fbdefb0, type: 2}
+  - {fileID: 11400000, guid: 034cd972d7a04824eb396868f5580894, type: 2}
