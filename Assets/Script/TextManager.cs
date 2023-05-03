@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextManager : MonoBehaviour
 {
@@ -204,7 +203,8 @@ public class TextManager : MonoBehaviour
     {
         HideSelectPanel();
         Player.isTalking = false;
-        
         Debug.Log("»¹½º");
+
+        SceneManager.LoadScene("GameOver");
     }
 }
