@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 1. MeiFirstSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "\uB204\uAD6C\uC138\uC694..?"
+  firstText: "\uBB50\uC57C...\uC65C \uCE5C\uD55C\uCC99\uC774\uC2DC\uC8E0."
   firstTrue: 0
-  secondText: "\uC54C\uC9C0\uC54C\uC9C0!! \uC5B4\uB838\uC744 \uB54C \uAC19\uC774
-    \uB180\uB358 \uB9B0\uC774\uC796\uC544"
+  secondText: "\uC544 \uB098\uB294 \u25CB\u25CB \uB300\uD559\uAD50 \uB2E4\uB2C8\uC9C0"
   secondTrue: 1
-  threeText: "\uBB50\uC57C \uC774\uB144\uC740 \uAEBC\uC838!"
+  threeText: "\uC548\uC0AC\uC694~"
   threeTrue: 0

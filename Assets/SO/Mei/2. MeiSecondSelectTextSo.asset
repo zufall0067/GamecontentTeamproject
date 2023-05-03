@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 2. MeiSecondSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "\uC5B4..? \uB098 \uC624\uB298 \uC804\uC0DD\uC2AC \uC2E0\uC791 \uB098\uC628\uB2E4\uD574\uC11C....\uC11C\uC810\uC5D0
-    \uAC00\uC57C\uD560\uAC70\uAC19\uB2E4...."
+  firstText: "\uC544..\uADF8\uAC74 \uC880 \uBD80\uB2F4\uC2A4\uB7FD\uB124\uC694.."
   firstTrue: 0
-  secondText: "\uC5B4? \uADF8\uB798 \uB0B4\uAC00 \uC880 \uB3C4\uC640\uC904\uAC8C!!"
+  secondText: "\uBB50\uB798 \uB354\uCE58\uD398\uC774\uD574"
   secondTrue: 1
-  threeText: "\uB0B4\uAC00 \uC9C4\uC9DC \uB3C4\uC6C0\uC774 \uB420\uAE4C...?"
-  threeTrue: 0
+  threeText: "\uC624\uB298\uC740 \uBA54\uC774\uAC00 \uC0AC\uB294 \uBC25 \uB9DB\uC788\uAC8C
+    \uBA39\uC5B4\uC57C\uC9C0!"
+  threeTrue: 1
