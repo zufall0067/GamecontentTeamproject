@@ -22511,15 +22511,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666e19b0b9b132641a0e266a796b6da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSO: {fileID: 11400000, guid: 3643a7df54fb2b3418ad945346b04524, type: 2}
-  characterImage: []
-  characterCutScene: {fileID: 0}
+  characterSO: {fileID: 11400000, guid: fa8f7b245dd731c459b6ec8d390427f8, type: 2}
+  characterImage:
+  - {fileID: 409526013}
+  - {fileID: 409526013}
   characterName: "\uAFC8\uD234\uC7742"
   dialogue: {fileID: 0}
+  characterText: {fileID: 0}
   likePoint: 0
   target: {fileID: 0}
   dampSpeed: 2
-  petIndex: 0
 --- !u!212 &840873167
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23870,13 +23871,12 @@ MonoBehaviour:
   characterImage:
   - {fileID: 2324008229497749544, guid: c959eba2bcd201742b0ae4b3731e2e2e, type: 3}
   - {fileID: 4924516239773933009, guid: e7345d7f20511844587c0afdff40a81c, type: 3}
-  characterCutScene: {fileID: 0}
   characterName: "\uB2C8\uCE74"
   dialogue: {fileID: 0}
+  characterText: {fileID: 0}
   likePoint: 0
   target: {fileID: 0}
   dampSpeed: 2
-  petIndex: 0
 --- !u!212 &1203287421
 SpriteRenderer:
   m_ObjectHideFlags: 0
