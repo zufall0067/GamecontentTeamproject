@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 4. RinFourthSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "\uC800\uB3C4 \uC88B\uC544\uC694"
-  firstTrue: 1
-  secondText: "\uC544..\uBBF8\uC548.."
+  firstText: "\uAC70\uAE30 \uB108\uBB34 \uC2DC\uB044\uB7FD\uC9C0 \uC54A\uC544?"
+  firstTrue: 0
+  secondText: "\uBB54 \uCE74\uD398\uC57C...\uB108 \uB180 \uC0DD\uAC01\uC911\uC774\uC9C0"
   secondTrue: 0
-  threeText: "\uC0DD\uAC01\uD558\uB294 \uAC83\uC744 \uADF8\uB9CC\uB450\uC5C8\uB2E4."
+  threeText: "\uADF8\uB7F4\uAE4C? \uC6B0\uB9AC \uC544\uAC00?"
   threeTrue: 1

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a39e75352c8c8da48b977dd786d53e53, type: 3}
+  m_Name: MeiCharacterSO
+  m_EditorClassIdentifier: 
+  arraySelectTextSO:
+  - {fileID: 11400000, guid: 343bdcc16d4393c429d22bab5b87329d, type: 2}
+  - {fileID: 11400000, guid: bb5b203be2faa00419b0b041acc6e360, type: 2}
+  - {fileID: 11400000, guid: aa3f9a1bd1816894aa33e2bead28bde4, type: 2}
+  - {fileID: 11400000, guid: e23f4b17d4451c647bc45156da038fa9, type: 2}
+  - {fileID: 11400000, guid: 4e709569c6776374f8c3beff49df487e, type: 2}
+  arrayTextSO:
+  - {fileID: 11400000, guid: a552274b09381274093b85372afe57a6, type: 2}
+  - {fileID: 11400000, guid: 85e9ff4275560e940a0cdc99b9b74e7e, type: 2}
+  - {fileID: 11400000, guid: 595e1cfecf972ef4cb9689e7b1c9f8c1, type: 2}
+  - {fileID: 11400000, guid: 3edf51ebb34718542a76cc8ca2edfef7, type: 2}
+  - {fileID: 11400000, guid: 713390761e43d8247bc1ecda47e9ab2d, type: 2}

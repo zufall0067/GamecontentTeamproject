@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48d9a04b001c16443b28ed5c1fe1d93f, type: 3}
-  m_Name: 3. RinThirdTextSo
+  m_Name: 2. MeiSecondTextSo
   m_EditorClassIdentifier: 
   text:
-  - "\uC815\uBC30\uC57C \uB098\uB791 \uB180\uC790"
-  - ChangeImage [3]
-  - "\uC624\uB79C\uB9CC\uC5D0 \uB180\uC774\uD130\uC5D0\uC11C \uADF8\uB124 \uD0C0\uC790!
-    \uD788\uD79B"
-  - "\uC7AC\uBC0C\uACA0\uB2E4 \uADF8\uCE58?"
+  - "\uC5B4? \uC815\uBC30\uC57C \uC5B4\uB514\uAC00?"
+  - "\uB098 \uC624\uB298 \uD559\uAD50\uC5D0\uC11C \uC219\uC81C\uB97C \uBC1B\uC558\uB294\uB370"
+  - "\uB108\uBB34 \uC5B4\uB824\uC6B4 \uAC83 \uAC19\uC544\uC11C \uB3C4\uC6C0\uC774
+    \uD544\uC694\uD55C\uB370.."
+  - "\uB108\uAC00 \uB3C4\uC640\uC8FC\uBA74 \uC26C\uC6CC\uC9C8\uAC70\uAC19\uC544 \u314E\u314E"
   - 
   - end
