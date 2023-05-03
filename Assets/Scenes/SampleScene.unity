@@ -22503,12 +22503,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSO: {fileID: 11400000, guid: f44760e3e8fca5149911dbc0aa1b53f7, type: 2}
   characterImage:
-  - {fileID: 7021483599601971251, guid: f173009bca4950044a1a0863c1a498f7, type: 3}
-  - {fileID: 3023518032278954713, guid: 58dc31155b1fb4e42a826bd57956bc34, type: 3}
-  - {fileID: 8013304833689957721, guid: 882fedaa2799c7c43b01e6d425fb7240, type: 3}
-  - {fileID: 4511114698739922414, guid: 8489dae7707cc0743b868de6eb9f069d, type: 3}
-  - {fileID: 1521978264834587024, guid: e5233974c8dc3414eb3cf048e93bc220, type: 3}
-  characterName: "\uB9B0"
+  - {fileID: 8171694094409599202, guid: 184606b7f11cfc547b15f091f1730f71, type: 3}
+  - {fileID: 4557016598796850533, guid: 63b5054245ecf704d9bb35d750e6e24a, type: 3}
+  - {fileID: 5001925767281569750, guid: d8d45fa7f72b9d64faa84833df07d4aa, type: 3}
+  characterName: "\uBA54\uC774"
   dialogue: {fileID: 0}
   characterText: {fileID: 0}
   likePoint: 0
