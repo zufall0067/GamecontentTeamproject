@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
 
     public int followPet;
 
+    private Animator playerAnimator;
+
     private void Start()
     {
         whatIsLayer = LayerMask.GetMask("Character");
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
         followPet = 0;
         isTalking= false;
         rigidbody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
         textManager = FindObjectOfType<TextManager>();
         StartCoroutine(CharacterCheck());
     }
@@ -80,6 +83,36 @@ public class Player : MonoBehaviour
             moveDirx = Input.GetAxisRaw("Horizontal");
             moveDiry = Input.GetAxisRaw("Vertical");
 
+
+
+            if (moveDirx > 0)
+            {
+                playerAnimator.SetBool("Right", true);
+            }
+            else if (moveDirx < 0)
+            {
+                playerAnimator.SetBool("Left", true);
+            }
+            else if(moveDiry < 0)
+            {
+                playerAnimator.SetBool("Down", true);
+            }
+            else if(moveDiry > 0)
+            {
+                playerAnimator.SetBool("Up", true);
+            }
+
+            if(moveDiry == 0)
+            {
+                playerAnimator.SetBool("Up", false);
+                playerAnimator.SetBool("Down", false);
+            }
+            if (moveDirx == 0)
+            {
+                playerAnimator.SetBool("Right", false);
+                playerAnimator.SetBool("Left", false);
+            }
+
             moveHorizontal = transform.right * moveDirx;
             moveVertical = transform.up * moveDiry;
 
@@ -110,9 +143,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos()
-    {
-        Gizmos.color = UnityEngine.Color.red;
-        Gizmos.DrawSphere(transform.position, 0.8f);
-    }
+    //void OnDrawGizmos()
+    //{
+    //    Gizmos.color = UnityEngine.Color.red;
+    //    Gizmos.DrawSphere(transform.position, 0.8f);
+    //}
 }
