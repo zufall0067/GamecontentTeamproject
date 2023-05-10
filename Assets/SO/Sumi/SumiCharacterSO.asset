@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a39e75352c8c8da48b977dd786d53e53, type: 3}
+  m_Name: SumiCharacterSO
+  m_EditorClassIdentifier: 
+  arraySelectTextSO:
+  - {fileID: 11400000, guid: 6b5574eee83d01142844618442f96f34, type: 2}
+  - {fileID: 11400000, guid: 400d829c82c503a418bd71e7f499c278, type: 2}
+  - {fileID: 11400000, guid: 3d2bc0b8ef9dc7e42a31228214bd8275, type: 2}
+  - {fileID: 11400000, guid: 447044c37becabf4bb7d3c2cf9bcb813, type: 2}
+  - {fileID: 11400000, guid: 7d09a70b5b6144740936ffb195d75267, type: 2}
+  arrayTextSO:
+  - {fileID: 11400000, guid: 01524bc436959f643a8a8052c4887e56, type: 2}
+  - {fileID: 11400000, guid: 01c99c06d0f03d44cb21f9d61af85aea, type: 2}
+  - {fileID: 11400000, guid: b90847c8332b0e04e8ab144b96c798fa, type: 2}
+  - {fileID: 11400000, guid: 2eacc2f6e01b9654f92d9ceb979d2e72, type: 2}
+  - {fileID: 11400000, guid: 840cf230c1d4e254dbc47bd2adde36f1, type: 2}
