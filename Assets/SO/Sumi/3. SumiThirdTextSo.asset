@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 3. SumiThirdTextSo
   m_EditorClassIdentifier: 
   text:
-  - 
-  - 
-  - 
-  - 
+  - "\uC624\uB298\uB3C4 \uC218\uACE0 \uB9CE\uC558\uC5B4"
+  - ChangeImage [1]
+  - "\uC774\uC81C \uC774\uAC70\uB9CC \uC815\uB9AC\uD558\uBA74 \uB418\uACA0\uB2E4!"
+  - ChangeImage [2]
+  - "\uC624\uB298\uB3C4 \uC815\uB9AC \uAC19\uC774 \uC900\uBE44\uD574\uC918\uC11C
+    \uACE0\uB9C8\uC6CC!!"
   - 
   - end

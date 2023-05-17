@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: 2. SumiSecondTextSo
   m_EditorClassIdentifier: 
   text:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "\uC5B4? \uC624\uB298\uC740 \uB3D9\uC544\uB9AC \uD68C\uC2DD\uC788\uB294 \uB0A0\uC778\uB370.."
+  - ChangeImage [4]
+  - "\uB108\uB3C4 \uAC19\uC774 \uAC08\uB798?"
+  - ChangeImage [5]
+  - "\uADF8\uB0E5 \uC778\uC6D0\uC218 \uCC44\uC6B0\uAE30\uC6A9\uC774\uB77C\uACE0 \uC0DD\uAC01\uD558\uACE0
+    \uD3B8\uD558\uAC8C\uC640! \u314E\u314E"
+  - ChangeImage [1]
+  - "\uBD80\uB2F4\uC2A4\uB7EC\uC6B0\uBA74 \uC548\uC640\uB3C4 \uB418\uAD6C..."
   - 
   - end

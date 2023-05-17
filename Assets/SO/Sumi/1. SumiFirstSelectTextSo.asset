@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 1. SumiFirstSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: 
+  firstText: "\uC544....\uC544\uB1E8 \u314E\u314E..."
   firstTrue: 0
-  secondText: 
+  secondText: "\uC544 \uC800 \uC6B4\uB3D9 \uC88B\uC544\uD574\uC694! \uAC19\uC774
+    \uB3D9\uC544\uB9AC \uB2E4\uB140\uC694 \uC120\uBC30!"
   secondTrue: 1
-  threeText: 
+  threeText: "\uC544....\uAC11\uC790\uAE30 \uD654\uC7A5\uC2E4\uC774 \uAE09\uD574\uC11C
+    \u314E\u314E..\uC8C4\uC1A1\uD569\uB2C8\uB2E4~~"
   threeTrue: 0
