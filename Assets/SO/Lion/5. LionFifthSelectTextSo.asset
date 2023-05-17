@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 5. LionFifthSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: 
+  firstText: "\uB044\uC544\uC544\uC544\uC545 \uADF8\uB7F0\uAC8C \uC544\uB2CC\uB370!!"
   firstTrue: 1
-  secondText: 
+  secondText: "\uBB50\uB77C\uB294\uAC70\uC57C \uC774 \uBE4C\uC5B4\uBA39\uC744 4\uBC1C\uB3D9\uBB3C!!!"
   secondTrue: 1
-  threeText: 
+  threeText: "\uB10C \uC778\uAC04\uC774 \uC544\uB2C8\uC796\uC544!!!"
   threeTrue: 1

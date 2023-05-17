@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text:
   - "\uC5B4\uC774 \uC778\uAC04"
+  - ChangeImage [0]
   - "\uB098 \uBC30\uACE0\uD504\uB2E4"
+  - ChangeImage [0]
   - "\uC2DD\uB7C9\uC744 \uAC00\uC838\uC624\uB3C4\uB85D"
+  - ChangeImage [0]
   - "\uC548\uAC00\uC838\uC624\uBA74.."
+  - ChangeImage [0]
   - "\uB108\uB97C \uC7A1\uC544\uBA39\uC5B4\uBC84\uB9AC\uACA0\uB2E4"
+  - ChangeImage [0]
   - "\uBE68\uB9AC \uAC00\uC838\uC624\uB3C4\uB85D"
   - 
   - end
