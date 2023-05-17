@@ -28,6 +28,14 @@ public class Character : MonoBehaviour
     private float xDistance = 0.3f; // x값
     public float dampSpeed = 2;  // 따라가는 속도 짧으면 타겟과 같이 움직인다.
 
+    private TextManager textManager;
+
+    public GameObject heart;
+
+    private void Awake()
+    {
+        textManager = FindObjectOfType<TextManager>();
+    }
 
     void Start()
     {
@@ -38,11 +46,14 @@ public class Character : MonoBehaviour
     {
         likePoint++;
 
+        Instantiate(heart, transform.position, Quaternion.identity);
+
         if (likePoint >= 5)
         {
+            textManager.Endingchecker += 1;
             StartCoroutine(FollowPlayer());
             this.gameObject.layer = 8;
-            Debug.Log("끄읏");
+            Debug.Log(textManager.Endingchecker);
         }
     }
 

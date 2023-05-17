@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
 
     private Animator playerAnimator;
 
+    
+
     private void Start()
     {
         whatIsLayer = LayerMask.GetMask("Character");

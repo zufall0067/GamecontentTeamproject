@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class TextManager : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class TextManager : MonoBehaviour
     private GameObject[] insCharacterImage;
     private Character insCharacter;
 
+    public int Endingchecker;
+    
     private void Awake()
     {
         firstText = firstButton.transform.Find("Text").gameObject.GetComponent<Text>();
@@ -42,8 +45,18 @@ public class TextManager : MonoBehaviour
 
     void Start()
     {
+        Endingchecker = 0;
         HideSelectPanel();
         HideTextPanel();
+    }
+
+    private void Update()
+    {
+        if(Endingchecker >= 5)
+        {
+            Endingchecker = 0;
+            SceneManager.LoadScene("Ending");
+        }
     }
 
     public void InstantiateCharacter(GameObject characterObject)
