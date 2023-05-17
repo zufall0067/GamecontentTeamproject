@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
   m_Name: 5. MeiFifthSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: 
+  firstText: "\uADF8 \uAC10\uC815\uC740 \uC0AC\uB791\uC774\uB77C\uACE0 \uD558\uB294\uAC70\uC57C.
+    \uBA54\uC774\uC57C \uC0AC\uB791\uD574"
   firstTrue: 1
-  secondText: 
+  secondText: "\uBA54\uC774\uC57C \uB098\uB3C4 \uC0AC\uB791\uD574 \uC6B0\uB9AC \uC0AC\uB791
+    \uC601\uC6D0\uD1A0\uB85D \uBCC0\uCE58\uB9D0\uC790"
   secondTrue: 1
-  threeText: 
+  threeText: "\uBA54\uC774\uC9DC\uC751 \uC544\uC774\uC2DC\uB5BC\uB8E8\uC694"
   threeTrue: 1
