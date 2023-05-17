@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a39e75352c8c8da48b977dd786d53e53, type: 3}
+  m_Name: LionCharacterSO
+  m_EditorClassIdentifier: 
+  arraySelectTextSO:
+  - {fileID: 11400000, guid: 13e2a5d826129cc48af1a13f2f6752e3, type: 2}
+  - {fileID: 11400000, guid: 8b690fc6c30dbcc49ab547cf1abd8012, type: 2}
+  - {fileID: 11400000, guid: f1a6a1e963e468c43984b3f7543f2087, type: 2}
+  - {fileID: 11400000, guid: f8ae7fd5a2af2ff49903244462d0b4be, type: 2}
+  - {fileID: 11400000, guid: 499274cac2d770548925bb05417bc052, type: 2}
+  arrayTextSO:
+  - {fileID: 11400000, guid: 0e73ef08d2552914a98e26bfc1894ec5, type: 2}
+  - {fileID: 11400000, guid: b36ab0a01d9349b42b3679d8d730882b, type: 2}
+  - {fileID: 11400000, guid: 46020f4cc2aae6542bb4ab4e92446438, type: 2}
+  - {fileID: 11400000, guid: 592d2d60d3cb15547be344825c5b6f2b, type: 2}
+  - {fileID: 11400000, guid: 38b259819465bcb4895613968bc332a4, type: 2}

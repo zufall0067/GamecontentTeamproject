@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48d9a04b001c16443b28ed5c1fe1d93f, type: 3}
-  m_Name: 4. SumiFourthTextSo
+  m_Name: 5. LionFifthTextSo
   m_EditorClassIdentifier: 
   text:
-  - "\uC800\uBC88\uC5D0 \uB3C4\uC640\uC900\uAC8C \uACE0\uB9C8\uC6CC\uC11C"
-  - ChangeImage [1]
-  - "\uBC25 \uD55C\uBC88 \uC0AC\uC904\uAE4C\uD558\uB294\uB370"
-  - ChangeImage [4]
-  - "\uB5A1\uBF41\uC774 \uC88B\uC544\uD574?"
-  - ChangeImage [5]
-  - "\uB098\uB791 \uB5A1\uBF41\uC774 \uBA38\uADF8\uB7EC\uAC00\uC790"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - end

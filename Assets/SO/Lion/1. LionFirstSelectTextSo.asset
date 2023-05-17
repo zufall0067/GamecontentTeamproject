@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
-  m_Name: 4. SumiFourthSelectTextSo
+  m_Name: 1. LionFirstSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "\uBB54 \uB5A1\uBF41\uC774\uC57C \uADF8\uB7F0\uAC78 \uC65C\uBA39\uC74C!"
+  firstText: "\uC81C\uBC1C \uBA39\uC9C0\uB9CC \uB9D0\uC544\uC8FC\uC138\uC694..\u3160\u3160"
   firstTrue: 0
-  secondText: "\uB5A1\uBCF6\uC774 \uC88B\uC544\uC694! \uADFC\uB370 \uC65C \uB5A1\uBF41\uC774\uB77C
-    \uD558\uC138\uC694 \u314B\u314B\u314B\u314B"
+  secondText: "\uC624 \uB9D0\uD558\uB294 \uC0AC\uC790\uB124 \uC2E0\uAE30\uD558\uB2E4!"
   secondTrue: 1
-  threeText: "\uB5A1\uBF41\uC774\uAC00 \uC544\uB2C8\uB77C \uB5A1\uBCF6\uC774 \uC785\uB2C8\uB2E4.
-    \uB9D0 \uC81C\uB300\uB85C \uD574\uC8FC\uC2DC\uC8E0."
+  threeText: "\uC58C\uB9C8 \uB3D9\uBB3C\uC774\uBA74 \uB3D9\uBB3C\uB2F5\uAC8C 4\uBC1C\uB85C
+    \uAE30\uB77C\uACE0!"
   threeTrue: 0

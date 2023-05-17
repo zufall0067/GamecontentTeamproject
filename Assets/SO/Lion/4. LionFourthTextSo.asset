@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d9a04b001c16443b28ed5c1fe1d93f, type: 3}
+  m_Name: 4. LionFourthTextSo
+  m_EditorClassIdentifier: 
+  text:
+  - "\uC5B4\uC774 \uC778\uAC04"
+  - "\uC5EC\uAE38 \uC790\uC8FC\uC624\uB294 \uC774\uC720\uAC00 \uBB54\uAC00"
+  - "\uC124\uB9C8 \uB098\uB97C \uC88B\uC544\uD558\uB294\uAC74 \uC544\uB2C8\uACA0\uC9C0?"
+  - "\uC815\uC0C1\uC801\uC778 \uC0AC\uB78C\uC774\uB77C\uBA74 \uC0AC\uB78C\uC744 \uC88B\uC544\uD560\uD130\uC778\uB370.."
+  - "\uCC38\uC73C\uB85C \uC774\uC0C1\uD55C \uC77C\uC774\uAD6C"
+  - "\uB10C \uCC38 \uC774\uC0C1\uD55C \uC778\uAC04\uC774\uC57C"
+  - 
+  - end

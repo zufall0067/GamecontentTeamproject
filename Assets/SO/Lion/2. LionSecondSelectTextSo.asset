@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 891600ba0b120a840b64437f9958c4fb, type: 3}
-  m_Name: 5. SumiFifthSelectTextSo
+  m_Name: 2. LionSecondSelectTextSo
   m_EditorClassIdentifier: 
-  firstText: "\uC0AC\uB791\uD574\uC694 \uC120\uBC30"
+  firstText: "\uC54C\uACA0\uC5B4 \uC774\uC5B8\uC544!"
   firstTrue: 1
-  secondText: "\uC88B\uC544\uD574\uC694 \uC120\uBC30"
-  secondTrue: 1
-  threeText: "\uB9C8\uC74C\uC758 \uC900\uBE44\uB294 \uB2E4 \uB410\uC5B4\uC694 \uC120\uBC30"
-  threeTrue: 1
+  secondText: "\uBB50\uB77C\uB294\uAC70\uC57C \uC774 \uB3D9\uBB3C\uC774!!"
+  secondTrue: 0
+  threeText: "\uC57C! \uB3D9\uBB3C\uC774\uBA74 \uB3D9\uBB3C\uB2F5\uAC8C 4\uBC1C\uB85C
+    \uAE30\uB77C\uB2C8\uAE50!"
+  threeTrue: 0
